@@ -209,8 +209,6 @@ def display_video(cap=cap):
         ret, frame = cap.read()
         if not ret:
             break
-        if keyboard.is_pressed("q"):
-            break
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
