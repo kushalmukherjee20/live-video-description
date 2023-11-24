@@ -21,3 +21,5 @@ Run the script by executing the following command in your terminal or command pr
 py GPT_4_Vision_Live_video_description.py
 
 Adjust the parameters in the live_video_description function to customize the behavior of the script.
+
+Press q to stop the script running.

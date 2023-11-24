@@ -8,6 +8,7 @@ import cv2
 import sounddevice as sd
 import soundfile as sf
 import io
+import keyboard
 import threading
 from dotenv import load_dotenv
 
@@ -170,6 +171,8 @@ def live_video_description(cycle, cap=cap, window_name='frame'):
         ret, frame = cap.read()
         if not ret:
             break
+        if keyboard.is_pressed("q"):
+            break
 
         if n == cycle:
             n = 0
@@ -206,9 +209,12 @@ def display_video(cap=cap):
         ret, frame = cap.read()
         if not ret:
             break
+        if keyboard.is_pressed("q"):
+            break
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+    
 
 # Main function to start the video display and description threads
 def main():
