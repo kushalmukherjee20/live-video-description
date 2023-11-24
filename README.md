@@ -18,6 +18,6 @@ Before running the script, ensure you have the following installed:
 # Usage
 Run the script by executing the following command in your terminal or command prompt:
 
-python script_name.py
+py GPT_4_Vision_Live_video_description.py
 
 Adjust the parameters in the live_video_description function to customize the behavior of the script.
