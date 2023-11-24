@@ -47,7 +47,7 @@ def image_description_1_image(image):
                 "content": [
                     {
                         "type": "text",
-                        "text": """Describe the image. Keep it brief."""
+                        "text": """Describe the image. Keep it brief. Don't start with 'The image shows'. Just give the description."""
                     },
                     {
                         "type": "image_url",
